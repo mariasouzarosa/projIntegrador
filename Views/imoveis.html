@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imoveis</title>
+        <meta charset="utf-8">
+        
+        <script src="./scripts/jquery-3.5.1.js"></script>
+        <script src="./scripts/imoveis/cadastro.js"></script>
+        <script src="./scripts/imoveis/grid.js"></script>
+    </head>
+    
+    <body>
+        <h1><center>Formulário de imóveis</center></h1>
+        <form name="formulario">
+            <p>
+                <label>Tipo:</label> 
+                <input id="tipo" type="text">
+            </p>
+ 
+            <p>
+                <label>Valor (R$):</label> 
+                <input id="valor" type="number">
+            </p>
+ 
+            <p>
+                <label>Municipio:</label> 
+                <select id="municipio">
+                    <option value="0">Selecione o municipio...</option>
+                </select>
+            </p>
+
+        
+            <p>
+                <button id="salvar" type="button">Salvar</button>
+            </p>
+ 
+            <hr>
+ 
+            <p>
+                <label><h2>Proprietários Cadastrados</h2></label> 
+                <table width="70%" border="1px" bgcolor="#CCC" >
+                    <thead>
+                        <tr>
+                            <th>CPF</th>
+                            <th>NOME<button type="button" id="crescente">^</button><button type="button" id="decrescente">v</button></th>
+                            <th>TELEFONE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="grid">
+ 
+                    </tbody>
+                </table>
+            </p>
+        </form>
+    </body>
+</html>
